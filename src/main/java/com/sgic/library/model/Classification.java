@@ -11,28 +11,27 @@ import javax.persistence.Table;
 @Table(name="classification")
 public class Classification {
 	
-	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int Id;
+	private int id;
 	
 	@Column(name="classification_name")
 	private String classificationName;
-	
+
 	public int getId() {
-		return Id;
-	}
+		return id;
+	} 
+
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
+
 	public String getClassificationName() {
 		return classificationName;
 	}
+
 	public void setClassificationName(String classificationName) {
 		this.classificationName = classificationName;
 	}
-	
-	
-
 }

@@ -12,15 +12,19 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		@SuppressWarnings("resource")
+		//@SuppressWarnings("resource")
 		AbstractApplicationContext ctx=new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-		ClassificationService classificationService = ctx.getBean("classificationService", ClassificationServiceImpl.class);
+	ClassificationService classificationService = ctx.getBean("classificationService", ClassificationServiceImpl.class);
 		
-		Classification classification = new Classification();
-		classification.setClassificationName("spring");
+//		Classification classification = new Classification();
+//		classification.setClassificationName("spring");
+//		
+//		classificationService.storeClassification(classification);
 		
-		classificationService.storeClassification(classification);
+//		for(Classification classification:classificationService.getClassification()) {
+//			System.out.println(classification.getId()+" "+classification.getClassificationName());
+//		}
 		
 		
 	}

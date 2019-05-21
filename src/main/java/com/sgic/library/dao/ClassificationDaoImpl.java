@@ -1,5 +1,8 @@
 package com.sgic.library.dao;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +28,14 @@ public class ClassificationDaoImpl implements ClassificationDao{
 		hibernateTemplate.save(classification);
 		
 		return null;
+	}
+
+	@Override
+	public List<Classification> getClassification() {
+		// TODO Auto-generated method stub
+		List<Classification> list = new ArrayList<Classification>();
+		list = hibernateTemplate.loadAll(Classification.class);
+		return list;
 	}
 
 	

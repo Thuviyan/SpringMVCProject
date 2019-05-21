@@ -1,5 +1,7 @@
 package com.sgic.library.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,14 @@ public class ClassificationServiceImpl implements ClassificationService{
 		return null;
 		
 		
+	}
+
+
+	@Override
+	public List<Classification> getClassification() {
+		
+		
+		return classificationDao.getClassification();
 	}
 
 }
