@@ -11,10 +11,13 @@ import org.springframework.stereotype.Repository;
 
 import com.sgic.library.model.Classification;
 
+// transactional - no data loses
 @Repository
 @Transactional
 public class ClassificationDaoImpl implements ClassificationDao{
 	
+	
+	//creating new object
 	@Autowired
 	private HibernateTemplate hibernateTemplate;
 	

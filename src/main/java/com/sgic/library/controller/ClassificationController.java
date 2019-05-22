@@ -19,6 +19,8 @@ public class ClassificationController {
 	@Autowired
 	private ClassificationService classificationService;
 	
+	// addclassification -> jsp page
+	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String printWelcome(Model model) {
 		model.addAttribute("classification", new Classification());

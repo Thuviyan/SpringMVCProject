@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="">Back</a>
+<a href="/springmvc/">Back</a>
 <table>
 	<tr>
 	<th>Classification Id</th>

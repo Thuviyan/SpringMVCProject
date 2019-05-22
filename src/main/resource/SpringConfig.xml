@@ -8,6 +8,7 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
+<!-- Full database connection -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
@@ -28,6 +29,7 @@
 		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
 	</bean> -->
 
+	<!-- if checkWriteOperations value is true then get only view function so need to put false -->
 	<bean id="hibernateTemplate"
 		class="org.springframework.orm.hibernate5.HibernateTemplate">
 		<property name="sessionFactory" ref="sessionFactory"></property>

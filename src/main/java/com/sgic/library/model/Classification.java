@@ -7,10 +7,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
 
+//entity -> for table creating
 @Entity
 @Table(name="classification")
 public class Classification {
 	
+	
+	/* variable name must be camelCase */
+	// id -> primary key
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
